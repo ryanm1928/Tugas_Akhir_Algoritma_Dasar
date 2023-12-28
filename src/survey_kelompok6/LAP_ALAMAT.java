@@ -140,7 +140,10 @@ public class LAP_ALAMAT {
             if (t == hal) {
                 x2 = jumlah_d; //untuk hal terakhir
             }
-            if (t % 2 == 0) {
+            if(x2 < 6)
+            {
+                x2 = jumlah_d;
+            }else if (t % 2 == 0) {
                 x1 = 0;
                 x2 = 4;
 
@@ -159,7 +162,7 @@ public class LAP_ALAMAT {
 
             for (int n = x1; n < x2; n = n + 1) {
                 j = j + 1;
-                data += (j + 1) + "      " + toko[j] + "          " + alamat[j] + "          " + pemilik[j] + "          " + status[j] + "\n\n";
+                data += (n + 1) + "      " + toko[j] + "          " + alamat[j] + "          " + pemilik[j] + "          " + status[j] + "\n\n";
                 tot_k = tot_k + modal[j];
             }
             data += "-------------------------------------------------------------------------------------------------------------------\n";

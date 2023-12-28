@@ -63,15 +63,47 @@ public class EDIT_P {
             int pilih = Integer.parseInt(pilih_s);
 
             if (pilih == 1) {
-                toko_s = JOptionPane.showInputDialog("[" + toko[x - 1] + "] \nNAMA TOKO");
+                do {
+                    toko_s = JOptionPane.showInputDialog("[" + toko[x - 1] + "] \nNAMA TOKO");
+                    if (toko_s == null || "".equals(toko_s)) {
+                        JOptionPane.showMessageDialog(null, "Data Tidak Boleh Kosong");
+                        putar = true;
+                    } else {
+                        putar = false;
+
+                    }
+
+                } while (putar);
+
                 toko[x - 1] = toko_s;
 
             } else if (pilih == 2) {
-                alamat_s = JOptionPane.showInputDialog("[" + alamat[x - 1] + "] \nALAMAT");
+                do {
+                    alamat_s = JOptionPane.showInputDialog("[" + alamat[x - 1] + "] \nALAMAT");
+                    if (alamat_s == null || "".equals(alamat_s)) {
+                        JOptionPane.showMessageDialog(null, "Data Tidak Boleh Kosong");
+                        putar = true;
+                    } else {
+                        putar = false;
+
+                    }
+
+                } while (putar);
+
                 alamat[x - 1] = alamat_s;
 
             } else if (pilih == 3) {
-                pemilik_s = JOptionPane.showInputDialog("[" + pemilik[x - 1] + "] \nNAMA PEMILIK");
+                do {
+                    pemilik_s = JOptionPane.showInputDialog("[" + pemilik[x - 1] + "] \nNAMA PEMILIK");
+                    if (pemilik_s == null || "".equals(pemilik_s)) {
+                        JOptionPane.showMessageDialog(null, "Data Tidak Boleh Kosong");
+                        putar = true;
+                    } else {
+                        putar = false;
+
+                    }
+                } while (putar);
+
                 pemilik[x - 1] = pemilik_s;
 
             } else if (pilih == 4) {
@@ -230,7 +262,17 @@ public class EDIT_P {
                 cabang[x - 1] = ket4;
 
             } else if (pilih == 9) {
-                email_s = JOptionPane.showInputDialog("[" + email[x - 1] + "] \nALAMAT EMAIL");
+                do {
+                    email_s = JOptionPane.showInputDialog("[" + email[x - 1] + "] \nALAMAT EMAIL");
+                    if (email_s == null || "".equals(email_s)) {
+                        JOptionPane.showMessageDialog(null, "Data Tidak Boleh Kosong");
+                        putar = true;
+                    } else {
+                        putar = false;
+
+                    }
+                } while (putar);
+
                 email[x - 1] = email_s;
 
             } else if (pilih == 10) {
@@ -272,9 +314,18 @@ public class EDIT_P {
                 sosmed[x - 1] = ket5;
 
             } else if (pilih == 11) {
-                telp_s = JOptionPane.showInputDialog("[" + telp[x - 1] + "] \nNO TELPON/HP ");
-                telp[x - 1] = telp_s;
+                do {
+                    telp_s = JOptionPane.showInputDialog("[" + telp[x - 1] + "] \nNO TELPON/HP ");
+                    if (telp_s == null || "".equals(telp_s)) {
+                        JOptionPane.showMessageDialog(null, "Data Tidak Boleh Kosong");
+                        putar = true;
+                    } else {
+                        putar = false;
 
+                    }
+                } while (putar);
+
+                telp[x - 1] = telp_s;
             } else if (pilih == 12) {
                 String ket6 = "";
                 do {
