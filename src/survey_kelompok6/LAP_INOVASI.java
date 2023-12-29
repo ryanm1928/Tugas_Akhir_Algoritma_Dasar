@@ -72,7 +72,7 @@ public class LAP_INOVASI {
 
                 data += (n + 1) + "    " + toko[n] + "     " + pemilik[n] + "       " + umur[n] + "      " + cabang[n] + "\n\n";
             }
-            r_umur = r_umur + tot / 10;
+            r_umur = (r_umur + tot) / 10;
             data += "===========================================================\n";
             data += "TOTAL UMUR    : " + r_umur + "\n";
             data += "CABANG         \n";
